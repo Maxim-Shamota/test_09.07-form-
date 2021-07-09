@@ -1,0 +1,77 @@
+@import './blocks/fonts';
+@import './blocks/first-screen';
+@import './blocks/second-screen';
+@import './blocks/third-screen';
+@import './blocks/product';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #E1E3EE;
+}
+
+input::placeholder {
+    color: #D0D3E2;
+}
+
+button {
+    width: 370px;
+    height: 45px;
+    background: #23C967;
+    border-radius: 15px;
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.main {
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    width: 440px;
+    height: 535px;
+    box-shadow: 10px 10px 60px #E2E7FF;
+    border-radius: 0 50px 50px 50px;
+    padding: 35px;
+    // overflow-x: hidden;
+}
+
+.main::before {
+    position: absolute;
+    content: '';
+    background: url('../../icons/corner_circles.svg');
+    position: absolute;
+    width: 102.54px;
+    height: 118px;
+    top: -15px;
+    right: -34px;
+    opacity: 0.8;
+    z-index: -2;
+}
+
